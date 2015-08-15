@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,300,100,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+  <title>AccountApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="nav">
+	<div class="nav-actions">
+		<% if current_user %>
+			<ul>
+				<li><div class="user-info"><%= @current_user.email %></div></li>
+				<li><%= link_to "Log out", logout_path, method: "DELETE" %></li>
+			</ul>
+		<% else %>
+			<ul>
+				<li><%= link_to "Login", 'login' %></li>
+				<li><%= link_to "Rejestracja", 'signup' %></li>
+			</ul>
+		<% end %>
+	</div>
+	<div class="logo">
+		PostMessenger
+	</div>
+</div>
+<%= yield %>
+
+</body>
+</html>

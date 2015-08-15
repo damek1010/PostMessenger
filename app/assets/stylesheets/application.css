@@ -1,0 +1,85 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+ .nav-actions ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 5px;
+ }
+ 
+ .nav-actions ul li{ 
+	width: 190px;
+	padding: 5px;
+	margin-top: 3px;
+	display: inline-block;
+	background-color: red;
+ }
+ 
+ .nav-actions ul li a {
+	color: white;
+	display: block;	
+	font-family: 'Roboto', sans-serif;
+	font-weight: medium;
+	font-size: 18px;
+ }
+ 
+ .nav-actions ul li .user-info{
+	color: white;
+	display: block;	
+	font-family: 'Roboto', sans-serif;
+	font-weight: medium;
+	font-size: 18px;
+ }
+ 
+ .nav .logo {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	margin-bottom: 5px;
+ }
+ 
+ input[type="submit"]{
+	width: 100px;
+	margin-top: 5px;
+	background-color: yellow;
+	padding:5px 15px;
+	border:0 none;
+ }
+ 
+ .log_form input {
+	margin-bottom: 2px;
+ }
+ 
+ .post-info {
+	display: inline;
+ }
+ 
+ .post-date{
+	color: gray;
+	font-size: 10px;
+ }
+ 
+ .post-author {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+ }
